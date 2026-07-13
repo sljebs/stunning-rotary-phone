@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travellian - Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero-header">
+        
+        <img src="images/halstatt.jpg" alt="Background View" class="hero-background-img">
+        <div class="background-overlay"></div>
+
+        <nav class="navbar">
+            <a href="#" class="logo-link">
+                <img src="images/logo.png" alt="Travellian Logo" class="logo-img">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+            <aside class="auth-actions">
+                <a href="#" class="btn-login">Login</a>
+                <a href="#" class="btn-signup">Sign up</a>
+            </aside>
+        </nav>
+
+        <main class="hero-content">
+            <h1 class="font-playfair">Start your unforgettable<br>journey with us.</h1>
+            <p>The best travel for your journey begins now</p>
+        </main>
+
+        <section class="booking-section">
+            <form class="booking-form">
+                
+                <div class="input-block">
+                    <span class="field-label">Destination</span>
+                    <input type="text" id="destination" name="destination" value="Dubai" class="font-playfair">
+                </div>
+
+                <div class="input-block">
+                    <span class="field-label">Person</span>
+                    <div class="select-wrapper">
+                        <select id="person" name="person" class="font-playfair">
+                            <option value="1">1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <span class="field-label">Check In</span>
+                    <div class="select-wrapper">
+                        <select id="check-in" name="check-in" class="font-playfair">
+                            <option value="Sun, 17th Sep 2020">Sun, 17th Sep 2020</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-block">
+                    <span class="field-label">Check Out</span>
+                    <div class="select-wrapper">
+                        <select id="check-out" name="check-out" class="font-playfair">
+                            <option value="Tue, 17th Oct 2020">Tue, 17th Oct 2020</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-book">
+                    Book Now <span>&rarr;</span>
+                </button>
+                
+            </form>
+        </section>
+
+        <nav class="slider-navigation" aria-label="Slider navigation">
+            <div class="dots-group">
+                <button type="button" class="dot active" aria-label="Page 1"></button>
+                <button type="button" class="dot" aria-label="Page 2"></button>
+                <button type="button" class="dot" aria-label="Page 3"></button>
+                <button type="button" class="dot" aria-label="Page 4"></button>
+                <button type="button" class="dot" aria-label="Page 5"></button>
+            </div>
+            
+            <div class="arrows-group">
+                <button type="button" class="arrow-btn" aria-label="Previous slide">
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7L7 1L13 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button type="button" class="arrow-btn active" aria-label="Next slide">
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L13 1" stroke="#FF7657" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+    </header>
+
+</body>
+</html>
