@@ -144,7 +144,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
     width: 100%;
-    max-width: 1030px;
+    max-width: 1030px; 
     margin: 0 0 1rem 0;
     height: 110px;
     display: flex;
@@ -160,9 +160,9 @@ body {
 
 /* თითოეული უჯრა */
 .input-block {
-    flex: 1;
+    flex: 1; 
     height: 100%;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,7 +170,7 @@ body {
     position: relative;
 }
 
-/* გრძელი თარიღების უჯრებს მივცეთ ოდნავ მეტი სივრცე, ვიდრე რიცხვებისას */
+
 .input-block:nth-child(3),
 .input-block:nth-child(4) {
     flex: 1.2; 
@@ -197,13 +197,13 @@ body {
     display: block;
 }
 
-/* ტექსტის ზომა 14px */
+/* ტექსტის ზომა 16px-მდე შევამცირეთ, რომ ჩაეტიოს გრძელი თარიღებიც */
 .input-block input, 
 .input-block select {
     border: none;
     border-bottom: 1.5px solid #707070; 
     outline: none;
-    font-size: 14px;
+    font-size: 16px; 
     font-weight: 500;
     color: #172432;
     background: transparent;
@@ -223,10 +223,10 @@ body {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding-right: 20px;
+    padding-right: 20px; /* ადგილი ისრისთვის */
 }
 
-/* ფიგმას თხელი Chevron ისარი */
+/* ისარი */
 .select-wrapper::after {
     content: '';
     position: absolute;
@@ -240,24 +240,44 @@ body {
     pointer-events: none;
 }
 
-/* ღილაკი Book Now */
+/* --- ღილაკი Book Now --- */
 .btn-book {
     background-color: #ff7657;
     color: #fff;
     border: none;
-    height: 100%;
-    padding: 0 2.5rem;
-    font-size: 1.1rem;
-    font-weight: 500;
+    height: 100%; 
+    width: 170px; 
+    padding: 0 1.5rem; 
     cursor: pointer;
+    
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
+    align-items: center;      
+    justify-content: space-between; 
+    
     transition: background 0.3s;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    white-space: nowrap;
+}
+
+/* ტექსტის ბლოკი  */
+.book-text {
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;  
+    font-family: 'Playfair Display', serif !important;
+    font-size: 1.4rem;        
+    font-weight: 400;         
+    line-height: 1.1;         
+    text-align: left;
+}
+
+/* ისრის სტილი */
+.book-arrow {
+    font-size: 1.8rem;     
+    font-weight: 300;
+    display: inline-block;
+    line-height: 1;
 }
 
 .btn-book:hover {
@@ -346,3 +366,4 @@ body {
         margin-top: 1rem;
     }
 }
+
